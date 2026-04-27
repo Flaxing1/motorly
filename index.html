@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motorly – Véhicules d'exception à Marcq-en-Barœul. Showroom de voitures de prestige, passeur de passion automobile depuis plus de 15 ans.">
+    <title>Motorly | Véhicules d'Exception à Marcq-en-Barœul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ TOP BAR ============ -->
+    <div class="top-bar" id="top-bar">
+        <div class="top-bar__inner">
+            <div class="top-bar__left">
+                <svg class="top-bar__phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+33652222717" class="top-bar__phone">06 52 22 27 17</a>
+            </div>
+            <div class="top-bar__center">
+                <a href="/" class="top-bar__logo"><img src="assets/images/logo-rouge.png" alt="Motorly" class="top-bar__logo-img"></a>
+                <span class="top-bar__tagline">passeur de passion</span>
+            </div>
+            <div class="top-bar__right">
+                <span class="top-bar__group-name">GROUPE GGP AUTO</span>
+                <div class="top-bar__social">
+                    <a href="https://facebook.com/motorly.fr" target="_blank" rel="noopener" aria-label="Facebook" class="top-bar__social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="https://instagram.com/motorly.fr" target="_blank" rel="noopener" aria-label="Instagram" class="top-bar__social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ STICKY HEADER (visible on scroll) ============ -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo"><img src="assets/images/logo-rouge.png" alt="Motorly" class="header__logo-img"></a>
+            <nav class="header__nav">
+                <div class="header__nav-item header__nav-item--has-dropdown"><a href="#vehicules" class="header__nav-link">VÉHICULES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="header__dropdown"><a href="#">Véhicules disponibles</a><a href="#">Véhicules vendus</a></div>
+                </div>
+                <div class="header__nav-item"><a href="#" class="header__nav-link">RECHERCHE PERSONNALISÉE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="header__nav-item"><a href="#" class="header__nav-link">RACHAT CASH <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="header__nav-item header__nav-item--has-dropdown"><a href="#services" class="header__nav-link">SERVICES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="header__dropdown"><a href="#">Solution de financement</a><a href="#">Reprise de véhicules</a></div>
+                </div>
+                <div class="header__nav-item"><a href="#apropos" class="header__nav-link">À PROPOS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="header__nav-item"><a href="#contact" class="header__nav-link">CONTACT</a></div>
+            </nav>
+            <button class="header__menu-btn" id="menu-toggle" aria-label="Menu"><span class="header__menu-icon"><span></span><span></span><span></span></span></button>
+        </div>
+    </header>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-overlay__content">
+            <nav class="menu-overlay__nav">
+                <a href="#vehicules" class="menu-overlay__link">Véhicules</a>
+                <a href="#" class="menu-overlay__link">Recherche Personnalisée</a>
+                <a href="#" class="menu-overlay__link">Rachat Cash</a>
+                <a href="#services" class="menu-overlay__link">Services</a>
+                <a href="#apropos" class="menu-overlay__link">À propos</a>
+                <a href="#contact" class="menu-overlay__link">Contact</a>
+            </nav>
+            <div class="menu-overlay__footer-info">
+                <a href="tel:+33652222717">06 52 22 27 17</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+        <div class="hero__slider" id="hero-slider">
+            <div class="hero__slide hero__slide--active" data-slide="0">
+                <div class="hero__slide-bg" style="background-image: url('assets/images/header-1.png')"></div>
+                <div class="hero__slide-overlay"></div>
+            </div>
+            <div class="hero__slide" data-slide="1">
+                <div class="hero__slide-bg" style="background-image: url('assets/images/header-2.png')"></div>
+                <div class="hero__slide-overlay"></div>
+            </div>
+            <div class="hero__slide" data-slide="2">
+                <div class="hero__slide-bg" style="background-image: url('assets/images/header-3.png')"></div>
+                <div class="hero__slide-overlay"></div>
+            </div>
+        </div>
+        <!-- Hero content overlay -->
+        <div class="hero__overlay-content">
+            <h1 class="hero__title">MOTORLY – VÉHICULES D'EXCEPTION À MARCQ-EN-BARŒUL</h1>
+            <!-- White nav bar -->
+            <div class="hero-nav" id="hero-nav">
+                <div class="hero-nav__item hero-nav__item--has-dropdown"><a href="#vehicules" class="hero-nav__link hero-nav__link--active">VÉHICULES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="hero-nav__dropdown"><a href="#">Véhicules disponibles</a><a href="#">Véhicules vendus</a></div>
+                </div>
+                <div class="hero-nav__item"><a href="#" class="hero-nav__link">RECHERCHE PERSONNALISÉ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="hero-nav__item"><a href="#" class="hero-nav__link">RACHAT CASH <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="hero-nav__item hero-nav__item--has-dropdown"><a href="#services" class="hero-nav__link">SERVICES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="hero-nav__dropdown"><a href="#">Solution de financement</a><a href="#">Reprise de véhicules</a></div>
+                </div>
+                <div class="hero-nav__item"><a href="#apropos" class="hero-nav__link">À PROPOS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="hero-nav__item"><a href="#contact" class="hero-nav__link">CONTACT</a></div>
+            </div>
+            <!-- CTA buttons per slide -->
+            <div class="hero__cta-wrapper">
+                <a href="#vehicules" class="hero__btn hero__btn--white" data-slide-cta="0">DÉCOUVRIR NOTRE SHOWROOM <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a href="#vehicules" class="hero__btn hero__btn--white" data-slide-cta="1" style="display:none">VOIR NOTRE CATALOGUE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a href="#contact" class="hero__btn hero__btn--white" data-slide-cta="2" style="display:none">TROUVEZ-MOI CE MODÈLE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+            <div class="hero__dots" id="hero-dots">
+                <button class="hero__dot hero__dot--active" data-dot="0" aria-label="Slide 1"></button>
+                <button class="hero__dot" data-dot="1" aria-label="Slide 2"></button>
+                <button class="hero__dot" data-dot="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VEHICLE CAROUSEL SECTION ============ -->
+    <section class="vehicles-carousel" id="vehicules">
+        <div class="vehicles-carousel__inner">
+            <h2 class="vehicles-carousel__title">Découvrez nos véhicules d'occasion premium</h2>
+            
+            <div class="vehicles-carousel__slider" id="vehicle-slider">
+                <div class="vehicles-carousel__track" id="vehicle-track">
+                    <div class="vehicle-slide"><img src="assets/images/porsche-911-turbo-s.png" alt="911 Turbo S"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-1.png" alt="V8 Vantage"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-2.png" alt="GLE 63S"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-3.png" alt="Ferrari Roma"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-4.png" alt="356 Speedster"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-5.png" alt="GranTurismo"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-6.png" alt="911 Carrera 4 GTS"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-7.png" alt="G63 AMG"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-8.png" alt="Aero"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-9.png" alt="Panamera"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-10.png" alt="Competition"></div>
+                    <div class="vehicle-slide"><img src="assets/images/porsche-slide-11.png" alt="Turbo"></div>
+                </div>
+                <button class="vehicles-carousel__nav vehicles-carousel__nav--prev" id="vehicle-prev" aria-label="Véhicule précédent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button class="vehicles-carousel__nav vehicles-carousel__nav--next" id="vehicle-next" aria-label="Véhicule suivant">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+
+            <div class="vehicles-carousel__cta">
+                <a href="vehicules.html" class="btn-red">DÉCOUVRIR NOTRE CATALOGUE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CREDIT NOTICE ============ -->
+    <section class="credit-notice" id="financer">
+        <div class="credit-notice__inner">
+            <p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</p>
+        </div>
+    </section>
+
+    <!-- ============ NOS SERVICES (4 images + titres) ============ -->
+    <section class="services-strip">
+        <div class="services-strip__grid">
+            <div class="services-strip__card">
+                <div class="services-strip__img"><img src="assets/images/showroom-cam2.jpg" alt="Vente de véhicules" loading="lazy"></div>
+                <p class="services-strip__label">VENTE DE VÉHICULES &<br>RECHERCHE PERSONNALISÉE</p>
+            </div>
+            <div class="services-strip__card">
+                <div class="services-strip__img"><img src="assets/images/image-detail.jpeg" alt="Reprise de véhicules" loading="lazy"></div>
+                <p class="services-strip__label">REPRISE DE VÉHICULES</p>
+            </div>
+            <div class="services-strip__card">
+                <div class="services-strip__img"><img src="assets/images/signature.png" alt="Solutions de financement" loading="lazy"></div>
+                <p class="services-strip__label">SOLUTIONS DE FINANCEMENT</p>
+            </div>
+            <div class="services-strip__card">
+                <div class="services-strip__img"><img src="assets/images/facade.jpg" alt="Accompagnement global" loading="lazy"></div>
+                <p class="services-strip__label">ACCOMPAGNEMENT GLOBAL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ENGAGEMENTS QUALITÉ ============ -->
+    <section class="engagements" id="services">
+        <div class="engagements__inner">
+            <h2 class="engagements__title"><span class="engagements__title-bg">NOS ENGAGEMENTS QUALITÉ</span></h2>
+            <p class="engagements__subtitle">Chez Motor.y, nous transformons l'achat automobile en une expérience extraordinaire grâce à nos quatre engagements clés :</p>
+            
+            <div class="engagements__grid">
+                <div class="engagement-card">
+                    <div class="engagement-card__image">
+                        <img src="assets/images/showroom-7.jpg" alt="Sélection de véhicules d'exception" loading="lazy">
+                        <div class="engagement-card__overlay">
+                            <h3>Sélection de<br>Véhicules<br>d'Exception</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-card">
+                    <div class="engagement-card__image">
+                        <img src="assets/images/siege.png" alt="Conseil personnalisé des passionnés" loading="lazy">
+                        <div class="engagement-card__overlay">
+                            <h3>Conseil<br>Personnalisé par<br>des Passionnés</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-card">
+                    <div class="engagement-card__image">
+                        <img src="assets/images/image-detail.jpeg" alt="Inspection mécanique rigoureuse" loading="lazy">
+                        <div class="engagement-card__overlay">
+                            <h3>Inspection<br>Mécanique<br>Rigoureuse</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="engagement-card">
+                    <div class="engagement-card__image">
+                        <img src="assets/images/maserati.png" alt="Service de reprise avantageux" loading="lazy">
+                        <div class="engagement-card__overlay">
+                            <h3>Service de<br>Reprise<br>Avantageux</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ QUI SOMMES-NOUS ============ -->
+    <section class="about" id="apropos">
+        <div class="about__inner">
+            <h2 class="about__title"><span class="about__title-bg">QUI SOMMES-NOUS ?</span></h2>
+
+            <div class="about__content">
+                <!-- Left column: text + images -->
+                <div class="about__left">
+                    <div class="about__text-block about__text-block--highlight">
+                        <p><strong>CRÉÉ EN 2020,</strong> <em>MOTORLY</em> EST DEVENU L'UN DES SHOWROOMS DE VÉHICULES DE LUXE LES PLUS RECONNUS DU NORD DE LA FRANCE. NOTRE PASSION POUR L'AUTOMOBILE D'EXCEPTION NOUS ANIME AU QUOTIDIEN, OFFRANT À CHAQUE CLIENT UNE EXPÉRIENCE UNIQUE ET SUR MESURE.</p>
+                        <p>NOTRE SHOWROOM EN GALERIE DES MARQUES EXCLUSIVES : <strong>PORSCHE, FERRARI, LAMBORGHINI, MASERATI, BENTLEY, ASTON MARTIN</strong> ET BIEN D'AUTRES.</p>
+                        <p>RETROUVEZ DANS NOS LOCAUX DE MARCQ-EN-BARŒUL DES VÉHICULES DE SPORT, DES GT, DES BERLINES DE LUXE, DES SUV PREMIUM ET DES VOITURES DE COLLECTION. NOUS PROPOSONS ÉGALEMENT DES VÉHICULES "DAILY" HAUT DE GAMME POUR CEUX QUI RECHERCHENT LE CONFORT ET LA PERFORMANCE AU QUOTIDIEN, SANS LA 500 OU DE COLLECTION SAUF À LA 600.000€.</p>
+                    </div>
+                    <div class="about__images-row">
+                        <img src="assets/images/panamera-competition.jpg" alt="Panamera Competition" class="about__showcase-img" loading="lazy">
+                        <img src="assets/images/qui-nous-sommes.jpg" alt="Showroom intérieur" class="about__showcase-img" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Right column: Guillaume + text -->
+                <div class="about__right">
+                    <div class="about__founder">
+                        <img src="assets/images/guillaume.png" alt="Guillaume - Fondateur de Motorly" class="about__founder-img" loading="lazy">
+                        <div class="about__founder-text">
+                            <p>Chez Motorly, Guillaume met sa passion automobile et son expertise de plus de 20 ans au service de ses clients. Installé à Marcq-en-Barœul, il sélectionne des autos de prestige avec un œil d'expert, en commande chaque pièce avec précision et sans compromis.</p>
+                            <p>Son approche ? Écouter, Accompagner, Trouver le véhicule idéal. Chaque voiture vendue fait l'objet d'une vérification complète et minutieuse, pour une satisfaction sans faille, car chez Motorly, chaque <em>Excellente étoile</em>, c'est une promesse de confiance et d'exigence.</p>
+                            <p>Passionné d'auto, de mécanique, amoureux de détails et d'excellence, Guillaume est persuadé qu'il propose un service de "nos régions" proche et à l'écoute de ses clients. La différence entre un concessionnaire classique et un passionné qui veille sur vos rêves automobiles, c'est ici, chez Motorly, que ça se passe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAP SECTION ============ -->
+    <section class="map-section" id="contact">
+        <div class="map-section__inner">
+            <div class="map-section__embed">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.5!2d3.09!3d50.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDQwJzEyLjAiTiAzwrAwNSczMC4wIkU!5e0!3m2!1sfr!2sfr!4v1" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localisation Motorly">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="footer__top">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/images/logo-blanc.png" alt="Motorly" class="footer__logo-img">
+                    </a>
+                    <p class="footer__tagline">Passeur de passion.</p>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Explorer</h4>
+                    <nav class="footer__links">
+                        <a href="#">Nos véhicules</a>
+                        <a href="#">Nos services</a>
+                        <a href="#">Financement</a>
+                        <a href="#">Reprise</a>
+                        <a href="#">Garantie</a>
+                    </nav>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Informations</h4>
+                    <nav class="footer__links">
+                        <a href="#">À propos</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Avis</a>
+                        <a href="#">FAQ</a>
+                    </nav>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Nous trouver</h4>
+                    <div class="footer__address">
+                        <p>Marcq-en-Barœul<br>59700</p>
+                        <p class="footer__hours"><strong>Lun - Ven</strong> : 9h - 19h<br><strong>Samedi</strong> : 10h - 17h</p>
+                        <a href="tel:+33652222717" class="footer__phone-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            06 52 22 27 17
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-inner">
+                <p class="footer__copyright">© 2026 Motorly. Tous droits réservés.</p>
+                <div class="footer__bottom-right">
+                    <nav class="footer__legal">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">CGU</a>
+                    </nav>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/motorly.fr" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://facebook.com/motorly.fr" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ STICKY BOTTOM BAR ============ -->
+    <div class="sticky-bottom-bar" id="sticky-bottom-bar">
+        <div class="sticky-bottom-bar__inner">
+            <p>Au plaisir de partager ensemble notre passion. <span class="sticky-bottom-bar__hashtag">#Motorly #motorlypassion</span></p>
+        </div>
+    </div>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

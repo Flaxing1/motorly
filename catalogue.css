@@ -1,0 +1,85 @@
+/* ================================================================
+   CATALOGUE PAGE – catalogue.css
+   ================================================================ */
+
+/* ═══════ Catalogue Hero ═══════ */
+.cat-hero{position:relative;height:50vh;min-height:350px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.cat-hero__bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.cat-hero__overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,10,.6) 0%,rgba(10,10,10,.75) 100%)}
+.cat-hero__content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 2rem}
+.cat-hero__title{font-family:var(--font-primary);font-size:clamp(1.3rem,3vw,2.2rem);font-weight:700;letter-spacing:3px;color:var(--white);margin-bottom:1.2rem;line-height:1.4;text-transform:uppercase}
+.cat-hero__subtitle{font-size:clamp(.85rem,1.2vw,1rem);color:rgba(255,255,255,.7);line-height:1.7;max-width:600px;margin:0 auto}
+
+/* ═══════ Recherche CTA ═══════ */
+.cat-search{background:var(--gray-900);border-bottom:1px solid rgba(255,255,255,.05);padding:2.5rem 2rem}
+.cat-search__inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
+.cat-search__icon{flex-shrink:0}
+.cat-search__icon svg{width:48px;height:48px;color:var(--red);stroke-width:1.5}
+.cat-search__text{flex:1;min-width:250px}
+.cat-search__text h2{font-family:var(--font-primary);font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+.cat-search__text p{font-size:.85rem;color:var(--gray-400);line-height:1.6}
+.cat-search__btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--red);color:var(--white);font-family:var(--font-primary);font-size:.8rem;font-weight:700;letter-spacing:1px;padding:.8rem 2rem;border-radius:var(--radius-sm);text-transform:uppercase;transition:all var(--transition-fast);white-space:nowrap;flex-shrink:0}
+.cat-search__btn svg{transition:transform var(--transition-fast)}
+.cat-search__btn:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 4px 20px rgba(200,16,46,.3)}
+.cat-search__btn:hover svg{transform:translateX(4px)}
+
+/* ═══════ Catalogue Grid ═══════ */
+.catalogue{background:var(--black-soft);padding:3rem 2rem 2rem}
+.catalogue__inner{max-width:1200px;margin:0 auto}
+.catalogue__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+
+/* ═══════ Vehicle Card ═══════ */
+.car-card{display:block;text-decoration:none;opacity:0;transform:translateY(30px);animation:cardFadeIn .6s ease forwards}
+.car-card:nth-child(1){animation-delay:.05s}
+.car-card:nth-child(2){animation-delay:.1s}
+.car-card:nth-child(3){animation-delay:.15s}
+.car-card:nth-child(4){animation-delay:.2s}
+.car-card:nth-child(5){animation-delay:.25s}
+.car-card:nth-child(6){animation-delay:.3s}
+.car-card:nth-child(7){animation-delay:.35s}
+.car-card:nth-child(8){animation-delay:.4s}
+.car-card:nth-child(9){animation-delay:.45s}
+
+@keyframes cardFadeIn{
+  to{opacity:1;transform:translateY(0)}
+}
+
+.car-card__img{position:relative;aspect-ratio:16/10;border-radius:var(--radius-md);overflow:hidden;background:var(--gray-900)}
+.car-card__img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,filter .4s ease;filter:brightness(.9)}
+.car-card:hover .car-card__img img{transform:scale(1.06);filter:brightness(1.05)}
+.car-card__name{font-family:var(--font-primary);font-size:.9rem;font-weight:600;color:var(--white);padding:.8rem .2rem .5rem;transition:color var(--transition-fast);letter-spacing:.3px}
+.car-card:hover .car-card__name{color:var(--red)}
+
+/* Hidden cards */
+.car-card--hidden{display:none}
+.car-card--revealed{display:block;opacity:0;transform:translateY(20px);animation:cardReveal .5s ease forwards}
+@keyframes cardReveal{
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ═══════ Afficher Plus ═══════ */
+.catalogue__more{text-align:center;padding:2.5rem 0 1rem}
+.catalogue__more-btn{background:var(--red);color:var(--white);font-family:var(--font-primary);font-size:.85rem;font-weight:700;letter-spacing:1.5px;padding:.9rem 3rem;border-radius:var(--radius-sm);text-transform:uppercase;cursor:pointer;transition:all var(--transition-fast);border:none}
+.catalogue__more-btn:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 4px 20px rgba(200,16,46,.3)}
+
+/* ═══════ Bottom CTA ═══════ */
+.cat-bottom-cta{background:linear-gradient(135deg,var(--black) 0%,var(--gray-900) 100%);padding:4rem 2rem;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
+.cat-bottom-cta__inner{max-width:600px;margin:0 auto}
+.cat-bottom-cta__inner h2{font-family:var(--font-primary);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);margin-bottom:.8rem}
+.cat-bottom-cta__inner p{font-size:.9rem;color:var(--gray-400);line-height:1.7;margin-bottom:2rem}
+
+/* ═══════ Active nav state for catalogue page ═══════ */
+.header__nav-link--current{color:var(--red)!important;text-decoration:underline!important}
+
+/* ═══════ Responsive ═══════ */
+@media(max-width:1024px){
+  .catalogue__grid{grid-template-columns:repeat(2,1fr)}
+  .cat-search__inner{flex-direction:column;text-align:center;gap:1.2rem}
+}
+@media(max-width:768px){
+  .catalogue__grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+  .cat-hero{height:40vh;min-height:280px}
+}
+@media(max-width:480px){
+  .catalogue__grid{grid-template-columns:1fr;gap:1rem}
+}

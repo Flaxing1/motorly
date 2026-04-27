@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogue de véhicules premium d'occasion Motorly – Porsche, Ferrari, Aston Martin, Maserati et plus à Marcq-en-Barœul.">
+    <title>Catalogue Véhicules | Motorly – Véhicules d'Exception</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogue.css">
+</head>
+<body>
+
+    <!-- ============ TOP BAR ============ -->
+    <div class="top-bar" id="top-bar">
+        <div class="top-bar__inner">
+            <div class="top-bar__left">
+                <svg class="top-bar__phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+33652222717" class="top-bar__phone">06 52 22 27 17</a>
+            </div>
+            <div class="top-bar__center">
+                <a href="index.html" class="top-bar__logo"><img src="assets/images/logo-rouge.png" alt="Motorly" class="top-bar__logo-img"></a>
+                <span class="top-bar__tagline">passeur de passion</span>
+            </div>
+            <div class="top-bar__right">
+                <span class="top-bar__group-name">GROUPE GGP AUTO</span>
+                <div class="top-bar__social">
+                    <a href="https://facebook.com/motorly.fr" target="_blank" rel="noopener" aria-label="Facebook" class="top-bar__social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="https://instagram.com/motorly.fr" target="_blank" rel="noopener" aria-label="Instagram" class="top-bar__social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ STICKY HEADER ============ -->
+    <header class="header header--visible" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo"><img src="assets/images/logo-rouge.png" alt="Motorly" class="header__logo-img"></a>
+            <nav class="header__nav">
+                <div class="header__nav-item header__nav-item--has-dropdown"><a href="#" class="header__nav-link header__nav-link--current">VÉHICULES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="header__dropdown"><a href="vehicules.html">Véhicules disponibles</a><a href="#">Véhicules vendus</a></div>
+                </div>
+                <div class="header__nav-item"><a href="#" class="header__nav-link">RECHERCHE PERSONNALISÉE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="header__nav-item"><a href="#" class="header__nav-link">RACHAT CASH <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="header__nav-item header__nav-item--has-dropdown"><a href="#" class="header__nav-link">SERVICES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="header__dropdown"><a href="#">Solution de financement</a><a href="#">Reprise de véhicules</a></div>
+                </div>
+                <div class="header__nav-item"><a href="index.html#apropos" class="header__nav-link">À PROPOS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+                <div class="header__nav-item"><a href="index.html#contact" class="header__nav-link">CONTACT</a></div>
+            </nav>
+            <button class="header__menu-btn" id="menu-toggle" aria-label="Menu"><span class="header__menu-icon"><span></span><span></span><span></span></span></button>
+        </div>
+    </header>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-overlay__content">
+            <nav class="menu-overlay__nav">
+                <a href="vehicules.html" class="menu-overlay__link">Véhicules</a>
+                <a href="#" class="menu-overlay__link">Recherche Personnalisée</a>
+                <a href="#" class="menu-overlay__link">Rachat Cash</a>
+                <a href="#" class="menu-overlay__link">Services</a>
+                <a href="index.html#apropos" class="menu-overlay__link">À propos</a>
+                <a href="index.html#contact" class="menu-overlay__link">Contact</a>
+            </nav>
+            <div class="menu-overlay__footer-info"><a href="tel:+33652222717">06 52 22 27 17</a></div>
+        </div>
+    </div>
+
+    <!-- ============ CATALOGUE HERO ============ -->
+    <section class="cat-hero">
+        <div class="cat-hero__bg" style="background-image: url('assets/images/header-1.png')"></div>
+        <div class="cat-hero__overlay"></div>
+        <div class="cat-hero__content">
+            <h1 class="cat-hero__title">NOTRE CATALOGUE DE VÉHICULES<br>PREMIUM D'OCCASION</h1>
+            <p class="cat-hero__subtitle">Découvrez notre sélection de véhicules d'exception, rigoureusement inspectés et sélectionnés par nos experts passionnés.</p>
+        </div>
+    </section>
+
+    <!-- ============ RECHERCHE PERSONNALISÉE CTA ============ -->
+    <section class="cat-search">
+        <div class="cat-search__inner">
+            <div class="cat-search__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="cat-search__text">
+                <h2>Recherche personnalisée</h2>
+                <p>Vous ne trouvez pas le véhicule de vos rêves ? Notre équipe se charge de la recherche pour vous. Décrivez-nous le modèle que vous désirez.</p>
+            </div>
+            <a href="#" class="cat-search__btn">TROUVEZ-MOI CE VÉHICULE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+    </section>
+
+    <!-- ============ CATALOGUE GRID ============ -->
+    <section class="catalogue" id="catalogue">
+        <div class="catalogue__inner">
+            <div class="catalogue__grid" id="catalogue-grid">
+
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-911-turbo-s.png" alt="Porsche 911 Turbo S"></div>
+                    <h3 class="car-card__name">Porsche 911 Turbo S</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-1.png" alt="Aston Martin V8 Vantage"></div>
+                    <h3 class="car-card__name">Aston Martin V8 Vantage</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-2.png" alt="Mercedes-AMG GLE 63S"></div>
+                    <h3 class="car-card__name">Mercedes-AMG GLE 63S</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-3.png" alt="Ferrari Roma"></div>
+                    <h3 class="car-card__name">Ferrari Roma</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-4.png" alt="Porsche 356 Speedster"></div>
+                    <h3 class="car-card__name">Porsche 356 Speedster</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-5.png" alt="Maserati GranTurismo"></div>
+                    <h3 class="car-card__name">Maserati GranTurismo</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-6.png" alt="Porsche 911 Carrera 4 GTS"></div>
+                    <h3 class="car-card__name">Porsche 911 Carrera 4 GTS</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-7.png" alt="Mercedes-AMG G63"></div>
+                    <h3 class="car-card__name">Mercedes-AMG G63</h3>
+                </a>
+                <a href="#" class="car-card" data-visible="true">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-8.png" alt="Morgan Aero 8"></div>
+                    <h3 class="car-card__name">Morgan Aero 8</h3>
+                </a>
+
+                <!-- Hidden initially (afficher plus) -->
+                <a href="#" class="car-card car-card--hidden">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-9.png" alt="Porsche Panamera GTS"></div>
+                    <h3 class="car-card__name">Porsche Panamera GTS</h3>
+                </a>
+                <a href="#" class="car-card car-card--hidden">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-10.png" alt="BMW M4 Competition"></div>
+                    <h3 class="car-card__name">BMW M4 Competition</h3>
+                </a>
+                <a href="#" class="car-card car-card--hidden">
+                    <div class="car-card__img"><img src="assets/images/porsche-slide-11.png" alt="Porsche 911 Turbo"></div>
+                    <h3 class="car-card__name">Porsche 911 Turbo</h3>
+                </a>
+                <a href="#" class="car-card car-card--hidden">
+                    <div class="car-card__img"><img src="assets/images/maserati.png" alt="Maserati Quattroporte"></div>
+                    <h3 class="car-card__name">Maserati Quattroporte</h3>
+                </a>
+                <a href="#" class="car-card car-card--hidden">
+                    <div class="car-card__img"><img src="assets/images/panamera-competition.jpg" alt="Porsche Panamera Turbo S"></div>
+                    <h3 class="car-card__name">Porsche Panamera Turbo S</h3>
+                </a>
+                <a href="#" class="car-card car-card--hidden">
+                    <div class="car-card__img"><img src="assets/images/showroom-cam2.jpg" alt="Aston Martin DB11"></div>
+                    <h3 class="car-card__name">Aston Martin DB11</h3>
+                </a>
+
+            </div>
+
+            <div class="catalogue__more" id="catalogue-more">
+                <button class="catalogue__more-btn" id="show-more-btn">AFFICHER PLUS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ BOTTOM CTA ============ -->
+    <section class="cat-bottom-cta">
+        <div class="cat-bottom-cta__inner">
+            <h2>Vous ne trouvez pas votre bonheur ?</h2>
+            <p>Notre équipe peut rechercher le véhicule de vos rêves. Contactez-nous pour une recherche personnalisée.</p>
+            <a href="index.html#contact" class="cat-search__btn">TROUVEZ-MOI CE VÉHICULE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="footer__top">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo"><img src="assets/images/logo-blanc.png" alt="Motorly" class="footer__logo-img"></a>
+                    <p class="footer__tagline">Passeur de passion.</p>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Explorer</h4>
+                    <nav class="footer__links"><a href="vehicules.html">Nos véhicules</a><a href="#">Nos services</a><a href="#">Financement</a><a href="#">Reprise</a><a href="#">Garantie</a></nav>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Informations</h4>
+                    <nav class="footer__links"><a href="index.html#apropos">À propos</a><a href="index.html#contact">Contact</a><a href="#">Avis</a><a href="#">FAQ</a></nav>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Nous trouver</h4>
+                    <div class="footer__address">
+                        <p>Marcq-en-Barœul<br>59700</p>
+                        <p class="footer__hours"><strong>Lun - Ven</strong> : 9h - 19h<br><strong>Samedi</strong> : 10h - 17h</p>
+                        <a href="tel:+33652222717" class="footer__phone-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>06 52 22 27 17</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-inner">
+                <p class="footer__copyright">© 2026 Motorly. Tous droits réservés.</p>
+                <div class="footer__bottom-right">
+                    <nav class="footer__legal"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a><a href="#">CGU</a></nav>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/motorly.fr" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="https://facebook.com/motorly.fr" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ STICKY BOTTOM BAR ============ -->
+    <div class="sticky-bottom-bar">
+        <div class="sticky-bottom-bar__inner">
+            <p>Au plaisir de partager ensemble notre passion. <span class="sticky-bottom-bar__hashtag">#Motorly #motorlypassion</span></p>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu
+      const mt = document.getElementById('menu-toggle');
+      const mo = document.getElementById('menu-overlay');
+      if (mt && mo) {
+        mt.addEventListener('click', () => { mt.classList.toggle('active'); mo.classList.toggle('active'); document.body.style.overflow = mo.classList.contains('active') ? 'hidden' : ''; });
+        document.querySelectorAll('.menu-overlay__link').forEach(l => l.addEventListener('click', () => { mt.classList.remove('active'); mo.classList.remove('active'); document.body.style.overflow = ''; }));
+      }
+      // Show more
+      const btn = document.getElementById('show-more-btn');
+      const moreWrap = document.getElementById('catalogue-more');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.car-card--hidden').forEach((c, i) => {
+            c.style.transitionDelay = `${i * .06}s`;
+            c.classList.remove('car-card--hidden');
+            c.classList.add('car-card--revealed');
+          });
+          moreWrap.style.display = 'none';
+        });
+      }
+      // Back to top
+      const btt = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 400) btt.classList.add('visible');
+        else btt.classList.remove('visible');
+      }, { passive: true });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      // Scroll animations
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('car-card--animated'); obs.unobserve(e.target); } });
+      }, { threshold: .1 });
+      document.querySelectorAll('.car-card:not(.car-card--hidden)').forEach(c => obs.observe(c));
+    });
+    </script>
+</body>
+</html>
